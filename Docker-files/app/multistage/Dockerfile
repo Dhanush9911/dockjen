@@ -1,5 +1,5 @@
-FROM openjdk:11 AS BUILD_IMAGE
-RUN sudo apt update && sudo apt install maven -y
+FROM oracklejdk:11 AS BUILD_IMAGE
+RUN apt update && apt install maven -y
 RUN git clone https://github.com/Dhanush9911/dockjen.git
 RUN cd dockjen && git checkout docker && mvn install
 
