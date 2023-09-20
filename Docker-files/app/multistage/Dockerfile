@@ -1,4 +1,4 @@
-FROM openjdk:11 AS BUILD_IMAGE
+FROM FROM oracle/graalvm-ce:11 AS BUILD_IMAGE
 RUN apt update
 RUN apt install maven -y
 RUN git clone https://github.com/Dhanush9911/dockjen.git
