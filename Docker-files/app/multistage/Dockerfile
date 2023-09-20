@@ -1,4 +1,4 @@
-FROM openjdk:11-jre-hotspot-alpine AS BUILD_IMAGE
+FROM openjdk:12 AS BUILD_IMAGE
 RUN apt update
 RUN apt install maven -y
 RUN git clone https://github.com/Dhanush9911/dockjen.git
